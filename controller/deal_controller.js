@@ -1,4 +1,4 @@
-const { dealDB } = require("../db/deal");
+const { dealDB } = require("../config/dbConfig");
 
 //  Add Cars Data Into DataBase.........
 const addDealData = async (req, res, next) => {

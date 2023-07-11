@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 
-const userDB = require("./db/user");
-const dealershipDB = require("./db/dealership");
+const { dbConnect } = require("./config/dbConfig");
+dbConnect();
 
 // app.use(cors());
 app.use(
@@ -33,3 +33,4 @@ app.use(error);
 app.listen(8000, () => {
   console.log("server is listning");
 });
+
